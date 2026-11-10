@@ -1,0 +1,19 @@
+info:
+  name: AgregarPedido422
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: "{{baseURL}}/pedidos"
+  body:
+    type: json
+    data: '{"cliente_id":9999,"fecha_pedido":"abc","estado":"xyz"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

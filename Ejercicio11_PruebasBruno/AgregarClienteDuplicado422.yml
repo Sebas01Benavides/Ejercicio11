@@ -1,0 +1,19 @@
+info:
+  name: AgregarClienteDuplicado422
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{baseURL}}/clientes"
+  body:
+    type: json
+    data: '{"nombre":"","correo":"no-es-correo"}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

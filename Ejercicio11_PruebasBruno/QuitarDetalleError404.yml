@@ -1,0 +1,16 @@
+info:
+  name: QuitarDetalleError404
+  type: http
+  seq: 20
+
+http:
+  method: DELETE
+  url: "{{baseURL}}/pedidos/1/detalles/9999"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

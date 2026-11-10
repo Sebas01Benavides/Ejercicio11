@@ -1,0 +1,19 @@
+info:
+  name: AgregarProducto422
+  type: http
+  seq: 24
+
+http:
+  method: POST
+  url: "{{baseURL}}/productos"
+  body:
+    type: json
+    data: '{"nombre":"X","precio":-5}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,19 @@
+info:
+  name: AgregarDetalleCantidad422
+  type: http
+  seq: 26
+
+http:
+  method: POST
+  url: "{{baseURL}}/pedidos/1/detalles"
+  body:
+    type: json
+    data: '{"producto_id":1,"cantidad":0}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

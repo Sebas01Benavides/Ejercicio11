@@ -1,0 +1,16 @@
+info:
+  name: QuitarProductoAjeno404
+  type: http
+  seq: 30
+
+http:
+  method: DELETE
+  url: "{{baseURL}}/pedidos/2/detalles/1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

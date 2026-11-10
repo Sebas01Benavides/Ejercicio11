@@ -1,0 +1,16 @@
+info:
+  name: QuitarDetalle
+  type: http
+  seq: 18
+
+http:
+  method: DELETE
+  url: "{{baseURL}}/pedidos/1/detalles/2"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
